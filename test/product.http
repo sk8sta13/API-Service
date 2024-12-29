@@ -1,0 +1,26 @@
+POST http://localhost:8000/products HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Fundamentos da Arquitetura de Software: uma Abordagem de Engenharia",
+    "price": 85.65
+}
+
+###
+GET http://localhost:8000/products HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzUxNjI3MDYsInN1YiI6IjdmOTI4YTJjLWU5MDAtNGE0Yi1hZmRjLWI2MDcyNzVhNmRiMSJ9.3wqQqpjC7Zkn3lHWrBRDHSAXLSxg2Ia52p-lVcUPDlg
+
+###
+GET http://localhost:8000/products/2cd1f6e5-0388-4cb5-bba1-48049b5a8c24 HTTP/1.1
+
+###
+PUT http://localhost:8000/products/2cd1f6e5-0388-4cb5-bba1-48049b5a8c24 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Bitcoin Para Leigos: Tradução 2ª Edição",
+    "price": 58.40
+}
+
+###
+DELETE http://localhost:8000/products/2cd1f6e5-0388-4cb5-bba1-48049b5a8c24 HTTP/1.1
